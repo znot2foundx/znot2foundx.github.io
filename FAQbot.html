@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸🦁FAQ</title>
+</head>
+<style>
+
+    header{
+        z-index: 1;
+        text-align:center;
+        letter-spacing: 5px;
+        background-image: linear-gradient(to right, rgb(199, 230, 249), rgb(69, 144, 250));
+        padding: 15px;
+        color: #fcfbfb;
+        border-radius: 19px;
+        height: 50px;
+        width: 1500px;
+        position: fixed;
+        font:400 15px '';
+        box-shadow:  11px 11px rgba(147, 145, 145, 0.219);
+        animation: 
+            on 1.8s steps(100, end)
+            
+    } 
+    @keyframes on {
+        from { top: 32px; }
+        to { top:10px;}
+    }   
+    .box2{
+        width: 500px;
+        height: 100px;        
+        position:absolute;
+        top:200px;
+        left: 3px;
+        background-color: #8eb2d3;
+        border-radius: 50px;
+        font:400 15px '';
+        text-align:center;
+        box-shadow:  11px 11px rgba(147, 145, 145, 0.219);
+        animation: 
+            mouseon 1.4s ease-in-out
+    }
+    @keyframes mouseon {
+        from { top: 240px; }
+        to { top:150px;}
+    }
+    .box1{
+        width: 1000px;
+        height: 1000px;        
+        position:absolute;
+        top:100px;
+        left: 3px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        box-shadow:  11px 11px rgba(147, 145, 145, 0.219);
+    }    
+</style>
+<body>
+    <header>
+        <h1>学生事务FAQbot</h1>
+    </header>
+
+    <div class="box1">
+        <p></p>
+        <img src="白底狮.png" alt="@_@" >
+    </div>
+
+    <div class="box2">
+        <p>点击coze图标后 在对话框输入问题即可噢-></p>
+    </div>     
+    <div>
+        <h1 style="color: rgb(78, 151, 252);"></h1>
+    </div>
+
+<script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+<script>
+  new CozeWebSDK.WebChatClient({
+    config: {
+      bot_id: '7597843483671920694',
+    },
+    componentProps: {
+      title: 'Coze',
+    },
+    auth: {
+      type: 'token',
+      token: 'pat_DA4QBMx84W4SH5XtrhcBgO91tmupRap7l6jgIMh2fgVAV2o9apofinP1MztTk8FE',
+      onRefreshToken: function () {
+        return 'pat_DA4QBMx84W4SH5XtrhcBgO91tmupRap7l6jgIMh2fgVAV2o9apofinP1MztTk8FE'
+      }
+    }
+  });
+</script>
+
+
+</body>
+</html>
